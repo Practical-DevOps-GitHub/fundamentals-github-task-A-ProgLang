@@ -1,0 +1,25 @@
+ssh osboxes@localhost -p 2222
+
+sudo useradd -m artem
+
+sudo usermod -aG sudo artem
+
+sudo reboot
+
+ssh osboxes@localhost -p 2222
+
+mkdir /home/artem
+
+sudo touch /home/artem/snisarenko
+
+sudo ln -s /home/artem/snisarenko /home/artem/snisarenko_link
+
+sudo mkdir /directory
+
+sudo cp /home/artem/snisarenko /
+
+sudo chown root /home/artem/snisarenko && sudo chmod 644 /home/artem/snisarenko
+
+grep '/bin/bash' /etc/passwd > password
+
+ls -l /home/artem/snisarenko
